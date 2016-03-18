@@ -1,15 +1,15 @@
 var apiKey = require('./../.env').apiKey;
 
-exports.getRepos = function(){
-  $.get('https://api.github.com/users/daneden?access_token=' + apiKey).then(function(response){
+exports.getRepos = function(searchedUser){
+  $.get('https://api.github.com/users/' + searchedUser + '/repos?access_token=' + apiKey).then(function(response){
     console.log(response);
-    $('#showLogin').append("Github Username: " + response.login);
-    $('#showName').append("Name: " + response.name);
-    $('#showRepos').append("Public Repositories: " +  response.public_repos);
-    $('#showCompany').append("Company: " +  response.company);
-    $('#showLocation').append("Location: " +  response.location);
+    for(i=0; i<response.length; i++){
+      var name = response[i].name;
+      var description = response[i].description;
+    $('#showInfo').append("<li>Github Username: " + name + "</li>" + "<li>Description: " + description + "</li>");
+  };
   }).fail(function(error){
-  $('.showError').append("ERROR");
+    console.log(error.responseJSON.message);
   });
 };
 // });

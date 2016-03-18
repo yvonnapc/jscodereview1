@@ -1,6 +1,9 @@
 var getRepos = require("./../js/getRepos.js").getRepos;
 
 $(document).ready(function(){
-  getRepos();
-  
+  $('#search').submit(function(event){
+    event.preventDefault();
+    var searchedUser = $('#searchedUser').val();
+    getRepos(searchedUser);
+  });
 });
