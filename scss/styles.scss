@@ -1,9 +1,26 @@
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  body {
-    font: 100% Helvetica, sans-serif;
-    background-color: #efefef;
-  }
+.container {
+  width: 75%;
+}
+
+$font-stack:    Verdana, sans-serif;
+$primary-color: #222;
+
+body {
+  font: 200% $font-stack;
+  color: #444;
+  font-weight: 1px, bold;
+  margin-bottom: 50px;
+}
+
+h1{
+  text-align: center;
+}
+
+.page-footer {
+  position: fixed;
+  text-align: center;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+}
