@@ -6,10 +6,24 @@ exports.getRepos = function(searchedUser){
     for(i=0; i<response.length; i++){
       var name = response[i].name;
       var description = response[i].description;
-    $('#showInfo').append("<li>Github Username: " + name + "</li>" + "<li>Description: " + description + "</li>");
-  };
+      var date = moment(response[i].created_at).format('MMMM Do YYYY, hh:mm:ss:a');
+      if(response[i].description === ""){
+        var description = "N/A";
+      }
+    $('#showInfo').append("<li>Repository name: " + name + "</li>" +
+                          "<ul><li>Description: " + description + "</li></ul>"+
+                          "<ul><li>Created At: " + date + "</li></ul>"+
+                           "<br>");
+  }
   }).fail(function(error){
     console.log(error.responseJSON.message);
   });
 };
+
+// exports.getUserInfo = function(searchedUser){
+//   $.get('https://api.github.com/users/' + searchedUser + '?access_token=' + apiKey).then(function(response){
+//     console.log(response);
+//     var image = response.avatar_url;
+//     $('#userInfo').append("<li><img src=" + image + "></li>");
 // });
+// };
