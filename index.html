@@ -5,24 +5,29 @@
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Github API </title>
   </head>
   <body>
     <div class="container">
-      <h1>Github Search</h1>
-
+      <div class="page-header">
+        <h1>Github API Search</h1>
+      </div>
       <form id="search">
           <label for="searchedUser">Search Github Users:</label>
           <input id="searchedUser" type="text" name="searchedUser">
-
-          <button type="submit" class="btn btn-success">Search</button>
+          <button type="submit" class="btn btn-info">Search</button>
       </form>
-
+      <h4><a href='/'>Refresh</a></h4>
+      <div id="userInfo"></div>
       <h5 id="showInfo"></h5>
-
-
       <h3 class="error"></h3>
     </div>
   </body>
+  <div class="page-footer">
+    <p>Copyright (c) 2016 | Yvonna Contreras | Epicodus | Portland, OR</p>
+  </div>
+</html>
+
 </html>
