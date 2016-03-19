@@ -6,15 +6,13 @@
 
 ## Description
 
-Portland Brewery List: Users come to the site and enter input into the Google Map search bar, which returns locations on the map based on their search.
-The user can click on an icon on the map and an information window will pop up with the name, address, and rating of the place. The user can click the button
-to add that place to their list which appends under the map.
+JavaScript Modern JS Code Review: Github API App. This application serves as a platform for the user to fill a form with the username of a Github account. The request is made through the Github API and returns a list of all the repositories belonging to the inputted username. 
 
 ## Setup/Installation Requirements
 
 1. Go to this address in your browser to obtain an API key: ```https://github.com/```
 2. Open Terminal and clone into this repository: ```https://github.com/yvonnapc/jscodereview1.git```
-3. Paste your API key into the ```.env``` and ```html``` files.
+3. Paste your API key into the ```.env``` and ```html``` files
 4. Within the project directory run:<br>
        ```$ npm init ```<br>
        ```$ npm install ```<br>
@@ -26,7 +24,7 @@ to add that place to their list which appends under the map.
 
 ## Known Bugs
 
-N/A
+Any consecutive form submissions are appended underneath the prior results as opposed to replacing them causing the browser page to be longer than it needs to be. The app will be more efficient and more visually engaging when this bug is fixed. 
 
 ## Support and contact details
 
