@@ -1,6 +1,6 @@
 # _Github API_
 
-#### An interactive webpage using GIthub API  | March 18, 2016
+#### An interactive webpage using Github API  | March 18, 2016
 
 #### By: Yvonna Contreras
 
@@ -43,6 +43,6 @@ If you have any issues, questions, ideas, or concerns contact me through GitHUb.
 * SCSS
 
 
-### License
+## License
 
 Copyright (c) 2016  |  Yvonna Contreras  |  Epicodus  |  Portland, OR
