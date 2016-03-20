@@ -1,7 +1,7 @@
 var apiKey = require('./../.env').apiKey;
 
 exports.getRepos = function(searchedUser){
-  $.get('https://api.github.com/users/' + searchedUser + '/repos?access_token=' + apiKey).then(function(response){
+  $.get('https://api.github.com/users/' + searchedUser + '/repos?access_token=' + apiKey + '&per_page=1000').then(function(response){
     console.log(response);
     for(i=0; i<response.length; i++){
       var name = response[i].name;
@@ -10,7 +10,7 @@ exports.getRepos = function(searchedUser){
       if(response[i].description === ""){
         var description = "N/A";
       }
-    $('#showInfo').append("<li>Repository name: " + name + "</li>" +
+    $('#showInfo').prepend("<li>Repository name: " + name + "</li>" +
                           "<ul><li>Description: " + description + "</li></ul>"+
                           "<ul><li>Created At: " + date + "</li></ul>"+
                            "<br>");
