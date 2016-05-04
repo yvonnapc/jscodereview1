@@ -1,4 +1,4 @@
-# _Github API_
+# _GitHub API_
 
 #### An interactive webpage using Github API  | March 18, 2016
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-JavaScript Modern JS Code Review: Github API App. This application serves as a platform for the user to fill a form with the username of a Github account. The request is made through the Github API and returns a list of all the repositories belonging to the inputted username. 
+JavaScript Modern JS Code Review: GitHub API App. This application serves as a platform for the user to fill a form with the username of a Github account. The request is made through the Github API and returns a list of all the repositories belonging to the inputted username.
 
 ## Setup/Installation Requirements
 
@@ -24,7 +24,7 @@ JavaScript Modern JS Code Review: Github API App. This application serves as a p
 
 ## Known Bugs
 
-Any consecutive form submissions are appended underneath the prior results as opposed to replacing them causing the browser page to be longer than it needs to be. The app will be more efficient and more visually engaging when this bug is fixed. 
+Any consecutive form submissions are appended underneath the prior results as opposed to replacing them causing the browser page to be longer than it needs to be. The app will be more efficient and more visually engaging when this bug is fixed.
 
 ## Support and contact details
 
