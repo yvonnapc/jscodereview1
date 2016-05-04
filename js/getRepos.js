@@ -1,7 +1,7 @@
 var apiKey = require('./../.env').apiKey;
 
 exports.getRepos = function(searchedUser){
-  $.get('https://api.github.com/users/' + searchedUser + '/repos?access_token=' + apiKey + '&per_page=1000').then(function(response){
+  $.get('https://api.github.com/users/' + searchedUser + '/repos?access_token=951200f3cbf0e274fdff574adedcac54ab406973&per_page=1000').then(function(response){
     console.log(response);
     $('#showInfo').empty();
     for(i=0; i<response.length; i++){
@@ -22,7 +22,7 @@ exports.getRepos = function(searchedUser){
 };
 
 exports.getUserInfo = function(searchedUser){
-  $.get('https://api.github.com/users/' + searchedUser + '?access_token=' + apiKey).then(function(response){
+  $.get('https://api.github.com/users/' + searchedUser + '?access_token=951200f3cbf0e274fdff574adedcac54ab406973').then(function(response){
     console.log(response);
     var image = response.avatar_url;
     $('#userInfo').append("<li><img src=" + image + "></li>");
