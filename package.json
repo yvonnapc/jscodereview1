@@ -27,11 +27,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/netzeln/JS-skeleton.git"
+    "url": "git+https://github.com/yvonnapc/jscodereview1"
   },
   "bugs": {
-    "url": "https://github.com/netzeln/JS-skeleton/issues"
+    "url": "https://github.com/yvonnapc/jscodereview1"
   },
-  "homepage": "https://github.com/netzeln/JS-skeleton#readme",
+  "homepage": "https://github.com/yvonnapc/jscodereview1",
   "description": ""
 }
