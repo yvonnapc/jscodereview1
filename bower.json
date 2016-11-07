@@ -4,7 +4,7 @@
   "main": "gulpfile.js",
   "license": "ISC",
   "moduleType": [],
-  "homepage": "https://github.com/netzeln/JS-skeleton",
+  "homepage": "https://github.com/yvonnapc/jscodereview1",
   "ignore": [
     "**/.*",
     "node_modules",
